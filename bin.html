@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> binario </title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(1deg, rgb(0, 8, 241), rgb(34, 121, 179), rgb(151, 231, 151));
+            margin-top: 1%;
+        }
+
+        .container{
+            margin: 50;
+            margin-top: 12em;
+            
+            width: 18em;
+        }
+
+        .inpuContanier, .outputcontaner{
+            height: 15em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+        .inpuContanier{
+            background-color:   rgb(65, 118, 203);
+            box-shadow: 0 0 10px rgb(123, 11, 11);
+  }
+            
+        
+        h1{
+            color: rgb(76, 172, 98);
+            align-items: center;
+        }
+
+        .outputcontaner{
+            background-color: rgb(116, 73, 194);
+              box-shadow: 0 0 10px rgb(123, 11, 11);
+        }
+        input{
+            background-color: rgb(65, 118, 203);
+            width: 5em;
+            height: 3em;
+            font-size: 2em ;
+            font-weight: bold;
+            border: none;
+            text-align: center;
+
+        }
+        input:focus{
+            outline: none;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inpuContanier">
+            <input type="text"  onchange="converter(this.value)">
+        </div> 
+        <div class="outputcontaner" style="width:100%; word-wrap:break-word; display:inline-block;">
+            <h1 id="resultado"> 0</h1>
+        </div> 
+    </div>
+    <script>
+        function converter (num) {
+            var dec = parseInt(num)
+            var bin = dec.toString(2)
+            
+            
+
+          
+          document.getElementById("resultado").innerText=bin
+        }
+    </script>
+</body>
+</html>

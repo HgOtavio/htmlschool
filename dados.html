@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ontem</title>
+    <style>  
+        body{
+            background:linear-gradient(90deg,rgb(128, 128, 218),rgb(221, 120, 120),rgb(226, 149, 226))
+       
+        }
+      .container{
+              display: flex;
+              flex-direction: column;
+              background: rgb(0, 0, 0);
+              width: 10em;
+              height: auto;
+              align-items: center;
+              justify-content: space-evenly;
+              border-radius: 200px;
+              box-shadow: 0 0 10px rgb(123, 11, 11);
+              border-right: 10000%;
+            }
+
+        
+        main{
+          display: flex;
+          width: 100vw;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          color: aliceblue;
+        
+        }
+
+        .result{
+          display: flex;
+          margin-top: 20px;
+          align-items: center;
+          width: 300px;
+          height: 150px;
+          border-radius: 100px;
+          font: italic 1.5rem serif;
+          box-shadow: 0px 0px 10px rgb(215, 9, 9);
+          background: #711b1b;
+          color: rgb(158, 242, 248);
+          padding: 20px;
+          box-sizing: border-box;
+          user-select: none;
+        }
+        .input {
+          border:  blue;
+          background-color: rgb(4, 31, 48);
+          transition: 1s; 
+          font-size: auto;
+          cursor: 1 ,pointer;
+          border-radius: auto;
+          width: 100px;
+          height: 10px;
+          box-sizing: border-box;
+          padding: 2px;
+          margin-top: 2px;
+          color: rgb(158, 242, 248);
+        }
+        .titulo {
+          display: flex;
+          width: 10vw;
+          height: 10vh;
+          justify-content: center;
+          align-items: center;
+          color: aliceblue;
+          border-radius: 200px;
+          box-shadow: 0 0 10px rgb(123, 11, 11);
+          width: 100px;
+          height: 100px;
+        }
+        .resul {
+          display: flex;
+          margin-top: 20px;
+          
+          width: 300px;
+          height: 150px;
+          border-radius: 100px;
+          font: italic 1.5rem serif;
+          box-shadow: 0px 0px 10px rgb(215, 9, 9);
+          background: #711b1b;
+          color: rgb(158, 242, 248);
+          padding: 20px;
+          box-sizing: border-box;
+        
+          user-select: none;
+         
+        }
+       
+     
+     
+        
+      
+    </style>
+</head>
+<body onkeypress="sla()">
+    <main>
+      <form action="">
+        <h1  class="titulo"> Dados: </h1> <br>
+        <div class="container">
+          <p> Nme: </p>
+          <input  class="input" type="text" id="nome"  ><br>
+    </div>
+    <div class="container">
+          <p>RG:</p>
+            <input  class="input" type="text" id="rg"><br>
+        </div>
+        <div class="container">
+        <p>CPF:</p>
+          <input  class="input" type="text" id="cpf"><br>
+        </div>
+        <div class="container">
+          <p>Profissão:</p>
+        <input  class="input" type="text" id="pro"><br>
+        </div> 
+        <div class="container">
+        <p>Endereço:</p>
+        <input  class="input" type="text" id="end"><br>
+      </div>
+    </form>
+   
+    <div >
+    <p id="p" class="resul"> Seu nome é ,seu rg é , seu cpf é , você é  e você mora </p>
+  </div>
+  </main>
+    
+
+    <script>
+        function sla(){
+            let nome = document.getElementById("nome").value
+            let rg = document.getElementById("rg").value
+            let cpf = document.getElementById("cpf").value
+            let pro = document.getElementById("pro").value
+            let end = document.getElementById("end").value
+
+            document.getElementById("p").innerHTML= ` Seu nome é ${nome},seu rg é ${rg}, seu cpf é ${cpf}, você é ${pro} e você mora ${end}`
+        }
+    </script>
+</body>
+</html>

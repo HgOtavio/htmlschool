@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudança de cor</title>
+</head>
+<body>
+    <h3 id="h3">Escolha o plano de fundo</h3><hr>
+    <button onclick="fundo(1)">Azul</button>
+    <button onclick="fundo(2)">Vermelho</button>
+    <button onclick="fundo(3)">Preto</button>
+    <button onclick="fundo(4)">Branco</button>
+
+    <script>
+        function fundo(i){
+            if (i == 1){
+                document.body.style.backgroundColor='blue';
+                document.getElementById('h3').style.color='white'
+
+            }else if(i == 2){
+                document.body.style.backgroundColor='red';
+                document.getElementById('h3').style.color='white'
+
+
+            }else if (i == 3){
+                document.body.style.backgroundColor='black';
+                document.getElementById('h3').style.color='white'
+
+            }else if (i == 4){
+                document.body.style.backgroundColor='white';
+                document.getElementById('h3').style.color='black'
+
+
+            }
+
+        }
+    </script>
+</body>
+</html>

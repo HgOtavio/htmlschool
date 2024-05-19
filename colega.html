@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colegas</title>
+    <style>
+        main{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            color:aliceblue;
+            
+
+          
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            background: rgb(219, 9, 9);
+            width: 400px;
+            height: 60px;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          }
+        
+    </style>
+
+        
+</head>
+<body>
+    <main>
+        <div class="container" id="nome">
+        
+
+    <script>
+        const colegas=["Cla", "Allin", "Felipe","Ivaneudo", "Livia", "Ligia" ,"kelly", "Pamela"]
+        console.log(colegas.length)
+        document.getElementById('nome').innerHTML= 'temos '    + colegas.length +   " colegas"
+    
+    </script>
+
+    </main>
+</body>
+</html>

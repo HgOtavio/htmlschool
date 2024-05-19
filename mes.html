@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mes</title>
+    <style>
+        main{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            color:aliceblue;
+            
+
+          
+        }
+
+        .container{
+            display: flex;
+            background: rgb(219, 9, 9);
+            width: 40000px;
+            height:60px;
+            align-items: center;
+            border-radius:20px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            
+          }
+        
+    </style>
+
+    
+</head>
+<body>
+    
+    <main>
+        <div class="container" id="mes">
+        
+
+    <script>
+        const mes=["janeiro", "fevereiro", "março","abril","maio","junho","julho", "agosto", "setembro", "outobro","novembro","dezembro"]
+        console.log(mes.length)
+        document.getElementById('mes').innerHTML= 'temos '    + mes.length +   " meses" + ' são eles '  + mes
+    
+    </script>
+
+</body>
+</html>

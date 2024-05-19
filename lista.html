@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista</title>
+</head>
+<body>
+    <main>
+        <div class="container" id="ta">
+            <div class="container" id="ok">
+                <div class="container" id="bl">
+                    <input type="text" id="lista">
+                    <button  onclick="colocsr()">coloca</button>
+                    <button  onclick="tirar()">tirar</button>
+                    <button  onclick="apagar()">apagar</button>
+
+
+        
+
+    <script>
+        let lista=[]
+
+            function colocsr(){
+                lista.push(document.getElementById("ta").value)
+                document.getElementById("ok").innerHTML = list.join("<br>-")
+                document.getElementById("bl").value = ""
+            }
+            function tirar(){
+                lista.pop(document.getElementById("ta").value)
+                document.getElementById("ok").innerHTML = list.join("<br>-")
+               
+            }
+            function apagar(){
+                document.getElementById("ok").innerHTML = list = [""]
+            }
+    </script>
+
+    </main>
+</body>
+</html>
